@@ -1,28 +1,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <parent>
-        <artifactId>todolist-mvc</artifactId>
-        <groupId>io.github.snyk</groupId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>todolist-web-struts</artifactId>
     <packaging>war</packaging>
     <name>todolist-web-struts Maven Webapp</name>
 
-    <dependencies>
+    <properties>
+        <spring.version>3.2.6.RELEASE</spring.version>
+        <hibernate.version>4.3.7.Final</hibernate.version>
+        <tapestry.version>5.3.8</tapestry.version>
+        <struts2.version>2.3.20</struts2.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
-        <dependency>
-            <groupId>io.github.snyk</groupId>
-            <artifactId>todolist-web-common</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>javax</groupId>
-                    <artifactId>javaee-web-api</artifactId>
-                </exclusion>
-            </exclusions>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+    <dependencies>
 
         <!-- javaee web api -->
         <dependency>
