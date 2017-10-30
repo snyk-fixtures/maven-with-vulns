@@ -17,12 +17,10 @@
 
     <dependencies>
 
-        <!-- javaee web api -->
         <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-web-api</artifactId>
-            <version>6.0</version>
-            <scope>provided</scope>
+            <groupId>axis</groupId>
+            <artifactId>axis</artifactId>
+            <version>1.3</version>
         </dependency>
 
         <!-- spring web -->
